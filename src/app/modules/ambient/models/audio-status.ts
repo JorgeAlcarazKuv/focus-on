@@ -34,8 +34,8 @@ export class AudioStatus {
   }
   set audioFileName(filename) {
     this._audioFileName = filename;
-    // this.audioHtmlElement.src = `/assets/audio/${filename}`;
-    this.audioHtmlElement.src = `https://raw.githubusercontent.com/JorgeAlcarazKuv/focus-on/gh-pages/assets/audio/${filename}`;
+    this.audioHtmlElement.src = `/assets/audio/${filename}`;
+    // this.audioHtmlElement.src = `https://raw.githubusercontent.com/JorgeAlcarazKuv/focus-on/gh-pages/assets/audio/${filename}`;
   }
   get audioFileName() {
     return this._audioFileName;
