@@ -1,0 +1,35 @@
+/* Avoid bootstrap default behaviour we don't want in this component */
+button:focus {
+  outline: none !important;
+}
+
+
+#btnSideBar {
+  height: 40px;
+  width: 40px;
+  z-index: 99;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+#sideBarContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#sideBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#componentsContent {
+  padding-top: 20px;
+}
+
+

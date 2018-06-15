@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-sm text-center">
+    <h1 mat-dialog-title>Hi there, guest!</h1>
+  </div>
+</div>
+<div class="row" mat-dialog-content>
+  <div class="col-sm text-center">
+    <p>Log in to your FocusOn account</p>
+    <mat-form-field class="dialog-field-width">
+      <input matInput cdkFocusInitial placeholder="Username / E-mail" [(ngModel)]="data.username">
+      <span matSuffix>
+        <mat-icon>person</mat-icon>
+      </span>
+    </mat-form-field>
+    <mat-form-field class="dialog-field-width">
+      <input matInput placeholder="Password" [(ngModel)]="data.password" type="password">
+      <span matSuffix>
+        <mat-icon>vpn_key</mat-icon>
+      </span>
+      <mat-hint *ngIf="showLoginErrorMessage" class="loginErrorMessage">Username or password incorrect</mat-hint>
+    </mat-form-field>
+  </div>
+</div>
+
+<div class="row" mat-dialog-actions>
+  <div class="col-sm text-center">
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button color="primary" (click)="onLoginClick()">Log in!</button>
+  </div>
+</div>

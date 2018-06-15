@@ -1,0 +1,60 @@
+<mat-card class="card" *ngIf="exerciseName">
+    <mat-card-header class="card-header">
+      <mat-card-title *ngIf="exerciseName === 'jacobson'" class="mat-card-title-exercise">Jacobson's Relaxation Technique</mat-card-title>
+      <mat-card-title *ngIf="exerciseName === 'meditation'" class="mat-card-title-exercise">Meditation</mat-card-title>
+      <mat-card-title *ngIf="exerciseName === 'breathing'" class="mat-card-title-exercise">Alternate Breathing</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div *ngIf="exerciseName === 'jacobson'">
+          <ol>
+              <li> Breathe deeply. </li>
+              <li> <b> Hands. </b> Fists clench, tense and loosen. The fingers extend and relax afterwards. Breathe deeply. </li>
+              <li> <b> Biceps and triceps. </b> The biceps are tense (when tensing the biceps we make sure that we do not tighten our hands for this, we shake our hands before relaxing after letting them rest on the armrests.) The triceps are tensed by folding the arms. arms in the opposite direction to the usual, then relax, breathe deeply. </li>
+              <li> <b> Shoulders. </b> Pull them back (be careful with this) and relax them. Breathe deeply. </li>
+              <li> <b> Neck (lateral). </b> With the shoulders straight and relaxed, bend the head slowly to the right as far as possible, then relax. Do the same to the left. Breathe deeply. </li>
+              <li> <b> Neck (forward). </b> Bring chin to chest, then relax. (Bringing the head back is not recommended). Breathe deeply. </li>
+              <li> <b> Mouth (extend and retract). </b> With the mouth open, extend the tongue as much as possible and relax by letting it rest in the lower part of the mouth. Bring your tongue as far back as you can in your throat and relax. Breathe deeply. </li>
+              <li> <b> Mouth (opening). </b> Open your mouth as much as possible; Be careful at this point not to block the jaw and relax. Breathe deeply. </li>
+              <li> <b> Tongue (palate and base). </b> Tighten the tongue against the palate and then relax. Press it against the base of the mouth and relax. Breathe deeply. </li>
+              <li> <b> Eyes. </b> Open them as much as possible and relax. Be sure they are completely relaxed, eyes, forehead and nose after each tension. </li>
+              <li> <b> Breathing. </b> Breathe as deeply as possible; and then it takes a little more; exhale and breathe normally for 15 seconds. Then exhale, throwing as much air as possible; then exhale a little more; breathe and exhale normally for 15 seconds. Breathe deeply. </li>
+              <li> <b> Back. </b> With your shoulders resting on the back of the chair, pull your body forward so that your back is arched; relax. Be careful with this. Breathe deeply. </li>
+              <li> <b> Buttocks. </b> Tense and lift the pelvis out of the chair; relax. Press the buttocks against the chair; relax. Breathe deeply. </li>
+              <li> <b> Thighs. </b> Extend the legs and raise them 10 cm. Do not tenses the stomach; relax. Press your feet on the ground; relax. Breathe deeply. </li>
+              <li> <b> Stomach. </b> Pull him in as much as possible; relax completely. Pull the stomach out; relax. Breathe deeply. </li>
+              <li> <b> Feet. </b> Squeeze the fingers (without raising the legs); relax. Point fingers up as much as possible; relax. Breathe deeply. </li>
+              <li> <b> Fingers. </b> With your legs relaxed, press your fingers against the floor; relax. Arrange the fingers up as much as possible; relax. Breathe deeply. </li>
+          </ol>
+                
+        </div>
+        <div *ngIf="exerciseName === 'meditation'">
+            <ol>
+                <li> With the flame firmly engraved in your mind take it slowly to your imagination into the inside of your head, slowly and calmly. </li>
+                <li> Make it lower by illuminating and purifying all parts of the body where the flame passes. First by your head, your eyes, your ears and then your mouth, always illuminating and purifying all the parts where it passes. Let it rest a few seconds and feel like your mind is increasingly clear. </li>
+                <li> Now lower it through your throat to your heart, there it will rest for a few seconds and illuminate your heart with a very bright light, full of energy. Keep the flame here as long as you need, with a minute it will be enough at the beginning but you can do it for as long as you like. </li>
+                <li> After the flame will be divided into two, one part that will go to the right area of ​​your body and another to the left area illuminating and purifying your arms and hands first, then going down the trunk to your legs and finally it will end up on your feet. </ li>
+                <li> At this level of concentration, where the flame is more intense and gives you a pleasant feeling of well-being, take your time and try to relax your mind even more and not think about anything. You should not fight against your thoughts, but watch them and let them go. </li>
+                <li> If you perform this exercise at night before going to sleep you should not worry, enjoy your relaxation and sleep. If on the contrary you do it during the day and you want to leave the meditation, move the fingers of your hands and feet little by little, then move your neck slowly so as not to get dizzy, open and close your mouth several times and get lost. </li>
+            </ol>                     
+            
+      </div>
+      <div *ngIf="exerciseName === 'breathing'">
+          <ol>
+              <li> Bring the index and middle fingers of your right hand to the palm of your hand. </li>
+              <li> Close the right nostril with the thumb, exhaling completely through the left nostril. </li>
+              <li> Inhale through the left nostril. </li>
+              <li> Block this nostril too, using your ring and little fingers and hold your breath. </li>
+              <li> Exhale through the right nostril. </li>
+              <li> Inhale through the right nostril, hold your breath by blocking the right nostril with your right thumb, and exhale from the left. </li>
+              <li> This is a round. Practice five rounds to start. </li>
+              <li> Then begin to inhale for four seconds, hold for 16 seconds and exhale for eight seconds. </li>
+           </ol>
+           
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button  color="primary" (click)="back()">
+            Back
+        </button>
+    </mat-card-actions>
+  </mat-card>

@@ -1,0 +1,56 @@
+/* Avoid bootstrap default behaviour we don't want in this component */
+button:focus {
+  outline: none !important;
+}
+
+#sound-list-container {
+  position: relative;
+}
+
+.title-profiles-field {
+  font-size: 44px;
+  text-align: center;
+  width: 100%;
+  outline: none !important;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.sound-item-row {
+    margin-bottom: 3em;
+}
+
+.item-volume-slider {
+    display:block;
+}
+
+.sound-item-container {
+    width: 175px;
+    display: inline-block;
+}
+
+.sound-item {
+  background-color: transparent;
+  height: 150px;
+  width: 150px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.sound-item-pink {
+  border-color: #c2185b;
+}
+.sound-item-green {
+  border-color: #76ff03;
+}
+.sound-item-orange {
+  border-color: #f44336;
+}
+
+#btnQR {
+  height: 40px;
+  width: 40px;
+  z-index: 99;
+  position: fixed;
+  top: 15px;
+  right: 30px;
+}

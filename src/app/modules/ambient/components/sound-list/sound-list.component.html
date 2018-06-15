@@ -1,0 +1,95 @@
+<div class="row justify-content-center">
+  <div *ngIf="soundPlayerService.loadedProfile" class="col-sm-4 title-profiles-field" contenteditable="true" [textContent]="soundPlayerService.profileTitle"
+    (input)="soundPlayerService.profileTitle=$event.target.textContent">
+    {{soundPlayerService.profileTitle}}
+  </div>
+  <div class="col-sm-4 text-center" *ngIf="soundPlayerService.userLogged">
+    <mat-form-field class="file-select-field-width">
+      <mat-select [ngModel]="soundPlayerService.loadedProfile" (ngModelChange)="soundPlayerService.loadNewAudioProfile($event)"
+        placeholder="Select sound profile">
+        <mat-option [value]="profile" *ngFor="let profile of soundPlayerService.loadedProfilesList; let i = index">{{profile.profileName}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-icon-button matTooltip="Save profile" matTooltipPosition="above" color="primary" id="btnSaveFiles" (click)="soundPlayerService.updateFirebase()">
+      <mat-icon>save</mat-icon>
+    </button>
+    <button mat-icon-button matTooltip="Create new file" matTooltipPosition="above" color="basic" (click)="soundPlayerService.createNewList()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>
+
+
+
+
+<div class="row justify-content-center sound-item-row">
+  <div class="col-sm-4 text-center">
+    <div class="sound-item-container">
+      <button (click)="soundPlayerService.playMusic('rain')" mat-fab class="sound-item sound-item-pink" color="primary">Rain</button>
+      <mat-slider [style.visibility]="soundPlayerService.loadedProfile.rainAudio.isPlaying ? 'visible' : 'hidden'" [(ngModel)]="soundPlayerService.loadedProfile.rainAudio.audioVolume"
+        min="0" max="1" step="0.05" class="item-volume-slider"></mat-slider>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="sound-item-container">
+      <button (click)="soundPlayerService.playMusic('storm')" mat-fab class="sound-item sound-item-green" color="primary">Storm</button>
+      <mat-slider [style.visibility]="soundPlayerService.loadedProfile.stormAudio.isPlaying ? 'visible' : 'hidden'" [(ngModel)]="soundPlayerService.loadedProfile.stormAudio.audioVolume"
+        min="0" max="1" step="0.05" class="item-volume-slider"></mat-slider>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center sound-item-row">
+  <div class="col-sm-4 text-center">
+    <div class="sound-item-container">
+      <button (click)="soundPlayerService.playMusic('fire')" mat-fab class="sound-item sound-item-orange" color="primary">Fire</button>
+      <mat-slider [style.visibility]="soundPlayerService.loadedProfile.fireAudio.isPlaying ? 'visible' : 'hidden'" [(ngModel)]="soundPlayerService.loadedProfile.fireAudio.audioVolume"
+        min="0" max="1" step="0.05" class="item-volume-slider"></mat-slider>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="sound-item-container">
+      <button (click)="soundPlayerService.playMusic('river')" mat-fab class="sound-item sound-item-orange" color="primary">River</button>
+      <mat-slider [style.visibility]="soundPlayerService.loadedProfile.riverAudio.isPlaying ? 'visible' : 'hidden'" [(ngModel)]="soundPlayerService.loadedProfile.riverAudio.audioVolume"
+        min="0" max="1" step="0.05" class="item-volume-slider"></mat-slider>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center sound-item-row">
+  <div class="col-sm-4 text-center">
+    <div class="sound-item-container">
+      <button (click)="soundPlayerService.playMusic('sea')" mat-fab class="sound-item sound-item-orange" color="primary">Sea</button>
+      <mat-slider [style.visibility]="soundPlayerService.loadedProfile.seaAudio.isPlaying ? 'visible' : 'hidden'" [(ngModel)]="soundPlayerService.loadedProfile.seaAudio.audioVolume"
+        min="0" max="1" step="0.05" class="item-volume-slider"></mat-slider>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="sound-item-container">
+      <button (click)="soundPlayerService.playMusic('night')" mat-fab class="sound-item sound-item-orange" color="primary">Night</button>
+      <mat-slider [style.visibility]="soundPlayerService.loadedProfile.nightAudio.isPlaying ? 'visible' : 'hidden'" [(ngModel)]="soundPlayerService.loadedProfile.nightAudio.audioVolume"
+        min="0" max="1" step="0.05" class="item-volume-slider"></mat-slider>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center sound-item-row">
+  <div class="col-sm-4 text-center">
+    <div class="sound-item-container">
+      <button (click)="soundPlayerService.playMusic('wind')" mat-fab class="sound-item sound-item-orange" color="primary">Wind</button>
+      <mat-slider [style.visibility]="soundPlayerService.loadedProfile.windAudio.isPlaying ? 'visible' : 'hidden'" [(ngModel)]="soundPlayerService.loadedProfile.windAudio.audioVolume"
+        min="0" max="1" step="0.05" class="item-volume-slider"></mat-slider>
+    </div>
+  </div>
+  <div class="col-sm-4 text-center">
+    <div class="sound-item-container">
+      <button (click)="soundPlayerService.playMusic('garden')" mat-fab class="sound-item sound-item-orange" color="primary">Garden</button>
+      <mat-slider [style.visibility]="soundPlayerService.loadedProfile.gardenAudio.isPlaying ? 'visible' : 'hidden'" [(ngModel)]="soundPlayerService.loadedProfile.gardenAudio.audioVolume"
+        min="0" max="1" step="0.05" class="item-volume-slider"></mat-slider>
+    </div>
+  </div>
+</div>
+
+
+<button *ngIf="soundPlayerService.userLogged" mat-button color="primary" id="btnQR" (click)="openQRDialog()">
+  <mat-icon>phone_iphone
+  </mat-icon>
+</button>
+

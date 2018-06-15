@@ -1,0 +1,40 @@
+<button mat-button color="primary" id="btnSideBar" (click)="sidenav.toggle()">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<mat-sidenav-container id="sideBarContainer" autosize>
+  <mat-sidenav #sidenav id="sideBar" mode="side" fixedInViewport>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/sound-list">List</a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/editor">Editor</a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/exercise-list">Exercises</a>
+    </mat-nav-list>
+    <mat-nav-list *ngIf="userLogged">
+      <a mat-list-item routerLink="/calendar">Calendar</a>
+    </mat-nav-list>
+    <mat-nav-list *ngIf="!userLogged">
+      <mat-list-item (click)="openLoginDialog()">
+        Log in
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-nav-list *ngIf="!userLogged">
+      <mat-list-item (click)="openRegisterDialog()">
+        Register
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-nav-list *ngIf="userLogged">
+        <mat-list-item (click)="logout()">
+          {{userLogged.username}} - Log out
+        </mat-list-item>
+      </mat-nav-list>
+  </mat-sidenav>
+
+
+  <mat-sidenav-content id="componentsContent">
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

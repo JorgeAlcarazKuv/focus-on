@@ -1,0 +1,13 @@
+>>> .ui-widget-content {
+    background-color: #424242;
+    color: #ffffff;
+}
+
+>>> .ui-widget-header {
+    background: 0;
+    background-color: #c2185a;
+}
+>>> .fc-event, .fc-event-dot {
+    border: 0;
+    background-color: #c2185a;
+}
