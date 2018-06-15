@@ -8,7 +8,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./selected-exercise.component.css']
 })
 export class SelectedExerciseComponent implements OnInit {
-  private exerciseName: string;
+  public exerciseName: string;
 
   constructor(private route: ActivatedRoute, private location: Location) {}
 

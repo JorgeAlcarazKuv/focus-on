@@ -14,7 +14,7 @@ export class AudioStatus {
     this.audioHtmlElement = new Audio();
     this.audioHtmlElement.loop = true;
     this.audioVolume = params.audioVolume || 0.5;
-    this.audioFileName = params.fileName || 'prueba';
+    this.audioFileName = params.fileName || 'default';
     this._isPlaying = params.isPlaying || false;
   }
 
@@ -34,7 +34,8 @@ export class AudioStatus {
   }
   set audioFileName(filename) {
     this._audioFileName = filename;
-    this.audioHtmlElement.src = `/assets/audio/${filename}`;
+    // this.audioHtmlElement.src = `/assets/audio/${filename}`;
+    this.audioHtmlElement.src = `https://raw.githubusercontent.com/JorgeAlcarazKuv/focus-on/gh-pages/assets/audio/${filename}`;
   }
   get audioFileName() {
     return this._audioFileName;

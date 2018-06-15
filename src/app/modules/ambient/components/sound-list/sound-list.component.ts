@@ -11,7 +11,7 @@ import { QrDialogComponent } from '../qr-dialog/qr-dialog.component';
 export class SoundListComponent implements OnInit {
 
   constructor(
-    private soundPlayerService: SoundPlayerService,
+    public soundPlayerService: SoundPlayerService,
     public dialog: MatDialog
   ) {}
 
