@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
-import { HttpResponse } from '@angular/common/http/src/response';
 import { Observable } from 'rxjs';
-import { User } from '../models/user.model';
-import { map, filter, scan } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 import { SessionService } from './session.service';
 
@@ -32,7 +30,7 @@ export class HttpWrapperService {
       );
     }
 
-    // headers = headers.append('Content-Type', 'application/json');
+    headers = headers.append('Content-Security-Policy', 'upgrade-insecure-requests');
 
     return headers;
   }
