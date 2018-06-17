@@ -4,6 +4,9 @@
 
 <mat-sidenav-container id="sideBarContainer" autosize>
   <mat-sidenav #sidenav id="sideBar" mode="side" fixedInViewport>
+    <mat-list-item *ngIf="userLogged" style="color: #c2185b;border-bottom: 1px solid;">
+      {{userLogged.username}}
+    </mat-list-item>
     <mat-nav-list>
       <mat-list-item routerLink="/sound-list">
         <mat-icon matListIcon>queue_music</mat-icon>
@@ -30,8 +33,8 @@
         Register
       </mat-list-item>
       <mat-list-item *ngIf="userLogged" (click)="logout()">
-        <p matLine style="color: #c2185b">{{userLogged.username}}</p>
-        <p matLine>Log out</p>
+        <mat-icon matListIcon>exit_to_app</mat-icon>
+        Log out
       </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>

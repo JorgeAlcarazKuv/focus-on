@@ -6,6 +6,7 @@ import { tap } from 'rxjs/operators';
 import { User } from '../models/user.model';
 import { SessionService } from './session.service';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +21,8 @@ export class SoundPlayerService {
 
   constructor(
     public fbService: AngularFireDatabase,
-    private sessionService: SessionService
+    private sessionService: SessionService,
+    public router: Router
   ) {
     this.loadedProfile = new AudioProfile();
 
@@ -148,6 +150,7 @@ export class SoundPlayerService {
       } else {
         // Unsubscribes from the observable if the new user state is null
         this.userAudioProfilesSubs.unsubscribe();
+        this.router.navigate(['landing']);
       }
     });
   }

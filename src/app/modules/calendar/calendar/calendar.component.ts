@@ -25,7 +25,7 @@ export class CalendarComponent implements OnInit {
     this.header = {
       left: 'prev,next today',
       center: 'title',
-      right: 'month,agendaWeek,agendaDay'
+      right: ''
     };
 
     this.calendarService.getEvents().subscribe(res => {

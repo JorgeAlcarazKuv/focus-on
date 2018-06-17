@@ -66,6 +66,7 @@ export class EditorComponent implements OnInit {
 
           // First file is selected
           this.userFileSelected = this.userFileList[0];
+          this.languageSelected = this.userFileSelected.format;
         }
       });
     }
@@ -99,6 +100,7 @@ export class EditorComponent implements OnInit {
       newLanguage
     );
     this.languageSelected = newLanguage;
+    this.userFileSelected.format = this.languageSelected;
   }
 
   /**
