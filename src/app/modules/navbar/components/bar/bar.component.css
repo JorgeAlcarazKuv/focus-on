@@ -32,5 +32,8 @@ button:focus {
 #componentsContent {
   padding-top: 20px;
 }
+>>> .mat-nav-list .mat-list-item .mat-list-item-content {
+  padding: 0 10px !important;
+}
 
 

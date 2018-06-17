@@ -16,7 +16,7 @@ export class HttpWrapperService {
     private sessionService: SessionService
   ) {
     // TODO: Hacer archivo properties y servicio que lo cargue.
-    this.URL = 'http://192.168.1.37:8080/api';
+    this.URL = 'https://focusonrest.herokuapp.com';
   }
 
   private createHeaders(): HttpHeaders {

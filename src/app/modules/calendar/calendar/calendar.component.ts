@@ -30,9 +30,9 @@ export class CalendarComponent implements OnInit {
 
     this.calendarService.getEvents().subscribe(res => {
       if (res) {
-        this.events = JSON.parse(res['events']);
+        this.events = res;
       } else {
-        this.events = null;
+        this.events = [];
       }
     });
 

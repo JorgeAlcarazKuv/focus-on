@@ -16,7 +16,7 @@
         <mat-option [value]="profile" *ngFor="let profile of soundPlayerService.loadedProfilesList; let i = index">{{profile.profileName}}</mat-option>
       </mat-select>
     </mat-form-field>
-    <button mat-icon-button matTooltip="Save profile" matTooltipPosition="above" color="primary" id="btnSaveFiles" (click)="soundPlayerService.updateFirebase()">
+    <button *ngIf="soundPlayerService.profileTitle" mat-icon-button matTooltip="Save profile" matTooltipPosition="above" color="primary" id="btnSaveFiles" (click)="soundPlayerService.updateFirebase()">
       <mat-icon>save</mat-icon>
     </button>
     <button mat-icon-button matTooltip="Create new file" matTooltipPosition="above" color="basic" (click)="soundPlayerService.createNewList()">

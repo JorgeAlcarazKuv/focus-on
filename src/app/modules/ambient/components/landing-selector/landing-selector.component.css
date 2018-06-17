@@ -33,7 +33,7 @@ button:focus {
 }
 #landing-selector-container {
   position: relative;
-  top: 20vh;
+  top: 15vh;
 }
 
 .landing-button {
@@ -52,26 +52,27 @@ button:focus {
   animation: spin 4s linear infinite;
 }
 
-.landing-button-pink {
-  border-color: #c2185b;
-}
-.landing-button-green {
-  border-color: #76ff03;
-}
-.landing-button-orange {
-  border-color: #f44336;
-}
-
 ::ng-deep .focuson-title{
   text-align: center;
   font-size: 72px;
   font-family: 'Russo One', sans-serif;
 }
+
 .focuson-icon {
   color: #c2185b;
   vertical-align: middle;
   font-size: 100px;
   height: 110px;
   width: 100px;
+}
 
+.landing-profile-option {
+  font-size: 72px;
+  border: 15px solid white;
+  cursor: pointer;
+  font-family: 'Russo One', sans-serif;
+}
+.landing-profile-option:hover {
+  /* color: #c2185b; */
+  border: 15px solid #c2185b;
 }

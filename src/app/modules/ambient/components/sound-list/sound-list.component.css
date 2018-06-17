@@ -49,7 +49,7 @@ button:focus {
 .sound-item {
   opacity: 0.6;
   background-color: transparent !important;
-
+  cursor: pointer;
   height: 150px;
   width: 175px;
 }

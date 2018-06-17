@@ -11,3 +11,23 @@
     border: 0;
     background-color: #c2185a;
 }
+
+>>> .fc .fc-button-group .ui-state-active {
+    border: 1px solid #7e103a;
+    background: #7e103a;
+}
+
+>>> .ui-button {
+    border: 1px solid #c2185a;
+    background: #c2185a;
+}
+
+>>> .ui-button:enabled:hover {
+    border: 1px solid #c24273;
+    background: #c24273;
+}
+
+.calendar-container {
+    position: relative;
+    top: 5vh;
+}
