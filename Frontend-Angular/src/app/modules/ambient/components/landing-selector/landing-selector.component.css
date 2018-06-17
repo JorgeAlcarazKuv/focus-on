@@ -1,0 +1,78 @@
+/* Avoid bootstrap default behaviour we don't want in this component */
+button:focus {
+  outline: none !important;
+}
+
+@-webkit-keyframes spin /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+#landing-selector-container {
+  position: relative;
+  top: 15vh;
+}
+
+.landing-button {
+  background-color: transparent;
+  height: 200px;
+  width: 200px;
+  border-width: 1px;
+  border-style: solid;
+  transform: rotate(0deg);
+  transition: transform 4s linear;
+}
+
+.landing-button:hover {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+::ng-deep .focuson-title{
+  text-align: center;
+  font-size: 72px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.focuson-icon {
+  color: #c2185b;
+  vertical-align: middle;
+  font-size: 100px;
+  height: 110px;
+  width: 100px;
+}
+
+.landing-profile-option {
+  font-size: 72px;
+  border: 15px solid white;
+  cursor: pointer;
+  font-family: 'Russo One', sans-serif;
+}
+.landing-profile-option:hover {
+  /* color: #c2185b; */
+  border: 15px solid #c2185b;
+}

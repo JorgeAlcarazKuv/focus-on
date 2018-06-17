@@ -1,16 +1,16 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/dist-server
-/tmp
-/out-tsc
+Frontend-Angular/dist
+Frontend-Angular/dist-server
+Frontend-Angular/tmp
+Frontend-Angular/out-tsc
 
 # dependencies
-/node_modules
+Frontend-Angular/node_modules
 
 # IDEs and editors
-/.idea
+Frontend-Angular/.idea
 .project
 .classpath
 .c9/
@@ -33,11 +33,11 @@
 npm-debug.log
 yarn-error.log
 testem.log
-/typings
+Frontend-Angular/typings
 
 # e2e
-/e2e/*.js
-/e2e/*.map
+Frontend-Angular/e2e/*.js
+Frontend-Angular/e2e/*.map
 
 # System Files
 .DS_Store

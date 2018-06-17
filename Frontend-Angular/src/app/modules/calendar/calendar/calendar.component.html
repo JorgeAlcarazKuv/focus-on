@@ -1,0 +1,4 @@
+<div class="calendar-container">
+    <p-schedule [events]="events" [header]="header" (onEventClick)="handleEventClick($event)" (onDayClick)="handleDayClick($event)"
+        (onEventDrop)="handleDrop($event)" [eventLimit]="3" [editable]="true" [height]="600"></p-schedule>
+</div>

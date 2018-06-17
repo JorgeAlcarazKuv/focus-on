@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1029037034053",
+    "firebase_url": "https://focuson-e239f.firebaseio.com",
+    "project_id": "focuson-e239f",
+    "storage_bucket": "focuson-e239f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029037034053:android:bf539a7800548b3f",
+        "android_client_info": {
+          "package_name": "com.focuson.focuson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029037034053-j67cr97qn3f9ef83sffahfamiseucm1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.focuson.focuson",
+            "certificate_hash": "6a01606cdfda995959343acb7a824dae3967ad59"
+          }
+        },
+        {
+          "client_id": "1029037034053-aosslv5mutm8ig1iuh51nb8nm3cnuo2j.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1029037034053-aosslv5mutm8ig1iuh51nb8nm3cnuo2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF6Fr4Epgw4-8MYxnDpCSgL79pPv7PoTE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029037034053-aosslv5mutm8ig1iuh51nb8nm3cnuo2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

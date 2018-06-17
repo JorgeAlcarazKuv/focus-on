@@ -1,0 +1,33 @@
+::ng-deep .ui-widget-content {
+    background-color: #424242 !important;
+    color: #ffffff !important;
+}
+
+::ng-deep .ui-widget-header {
+    background: 0 !important;
+    background-color: #c2185a !important;
+}
+::ng-deep .fc-event, .fc-event-dot {
+    border: 0 !important;
+    background-color: #c2185a !important;
+}
+
+::ng-deep .fc .fc-button-group .ui-state-active {
+    border: 1px solid #7e103a !important;
+    background: #7e103a !important;
+}
+
+::ng-deep .ui-button {
+    border: 1px solid #c2185a !important;
+    background: #c2185a !important;
+}
+
+::ng-deep .ui-button:enabled:hover {
+    border: 1px solid #c24273 !important;
+    background: #c24273 !important;
+}
+
+.calendar-container {
+    position: relative;
+    top: 5vh;
+}

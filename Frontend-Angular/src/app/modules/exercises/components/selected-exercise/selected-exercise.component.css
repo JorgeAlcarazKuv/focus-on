@@ -1,0 +1,23 @@
+
+
+.card {
+  width: 80%;
+  margin: 0 auto;
+}
+.card-header {
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-bottom: 16px;
+  margin-top: -20px !important;
+  padding: 0 0 0 16px;
+}
+.mat-card-title-exercise {
+  margin-top: 6px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 32px !important;
+  margin-bottom: 0;
+}
+
+ol li {
+  margin-bottom: 20px;
+}
