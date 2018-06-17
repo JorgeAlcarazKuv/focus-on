@@ -61,3 +61,17 @@ button:focus {
 .landing-button-orange {
   border-color: #f44336;
 }
+
+::ng-deep .focuson-title{
+  text-align: center;
+  font-size: 72px;
+  font-family: 'Russo One', sans-serif;
+}
+.focuson-icon {
+  color: #c2185b;
+  vertical-align: middle;
+  font-size: 100px;
+  height: 110px;
+  width: 100px;
+
+}

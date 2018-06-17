@@ -19,6 +19,20 @@ button:focus {
     margin-bottom: 3em;
 }
 
+::ng-deep .focuson-title{
+  text-align: center;
+  font-size: 72px;
+  font-family: 'Russo One', sans-serif;
+}
+.focuson-icon {
+  color: #c2185b;
+  vertical-align: middle;
+  font-size: 100px;
+  height: 110px;
+  width: 100px;
+
+}
+
 .item-volume-slider {
     display:block;
 }
@@ -28,22 +42,49 @@ button:focus {
     display: inline-block;
 }
 
-.sound-item {
-  background-color: transparent;
-  height: 150px;
-  width: 150px;
-  border-width: 1px;
-  border-style: solid;
+.sound-item-opacity {
+  opacity: 1 !important;
 }
 
-.sound-item-pink {
-  border-color: #c2185b;
+.sound-item {
+  opacity: 0.6;
+  background-color: transparent !important;
+
+  height: 150px;
+  width: 175px;
 }
-.sound-item-green {
-  border-color: #76ff03;
+
+.sound-item-rain {
+  background: url('/assets/images/rain.png') no-repeat center;
+  background-size: contain;
 }
-.sound-item-orange {
-  border-color: #f44336;
+.sound-item-night {
+  background: url('/assets/images/night.png') no-repeat center;
+  background-size: contain;
+}
+.sound-item-garden {
+  background: url('/assets/images/garden.png') no-repeat center;
+  background-size: contain;
+}
+.sound-item-wind {
+  background: url('/assets/images/wind.png') no-repeat center;
+  background-size: contain;
+}
+.sound-item-fire {
+  background: url('/assets/images/fire.png') no-repeat center;
+  background-size: contain;
+}
+.sound-item-storm {
+  background: url('/assets/images/storm.png') no-repeat center;
+  background-size: contain;
+}
+.sound-item-river {
+  background: url('/assets/images/river.png') no-repeat center;
+  background-size: contain;
+}
+.sound-item-sea {
+  background: url('/assets/images/sea.png') no-repeat center;
+  background-size: contain;
 }
 
 #btnQR {

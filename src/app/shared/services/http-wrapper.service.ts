@@ -30,7 +30,7 @@ export class HttpWrapperService {
       );
     }
 
-    headers = headers.append('Content-Security-Policy', 'upgrade-insecure-requests');
+    // headers = headers.append('Content-Type', 'application/json');
 
     return headers;
   }
