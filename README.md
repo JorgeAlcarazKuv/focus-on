@@ -1,6 +1,8 @@
-# FocusonFrontend
+# Focuson Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+Read the documentation (PDF) in the source folder to see the whole info about the project.
+
+# Angular Frontend Deploy:
 
 ## Development server
 
