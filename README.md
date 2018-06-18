@@ -2,6 +2,8 @@
 
 Read the documentation (PDF) in the source folder to see the whole info about the project.
 
+URL live project: https://jorgealcarazkuv.github.io/focus-on/
+
 # Angular Frontend Deploy:
 
 ## Development server
